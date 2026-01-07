@@ -1,0 +1,194 @@
+:root {
+    --color-primary: #8763f1;
+    --white: #fff;
+    --black: #000;
+    --gray: #9ca3af;
+    --color-background: #f6ebff;
+    --color-shadow: #8763f149;
+    --input: #fafafa;
+    --trash: #ef4444;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.title-header svg {
+    width: 50px;
+    height: 50px;
+    color: var(--white);
+    background-color: var(--color-primary);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px var(--color-shadow);
+}
+
+.title-header h1 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+header p {
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+main {
+    width: 100%;
+    max-width: 450px;
+}
+
+section {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.main-title h4 {
+    font-size: 1.2rem;
+    color: var(--black);
+    margin-bottom: 5px;
+}
+
+#pending-tasks {
+    color: var(--gray);
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.input-content {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-content input {
+    flex: 1;
+    background-color: var(--input);
+    border: 1px solid var(--gray);
+    padding: 12px 15px;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-content input:focus {
+    border-color: var(--color-primary);
+}
+
+.input-content button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.input-content button:hover {
+    box-shadow: 0 10px 25px var(--color-shadow);
+}
+
+.content-funnel {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.content-funnel button {
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+    background: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--gray);
+    transition: 0.2s;
+}
+
+.content-funnel button:first-child {
+    background-color: var(--color-primary);
+    color: var(--white);
+    border-color: var(--color-primary);
+}
+
+.content-funnel button:hover:not(:first-child) {
+    box-shadow: 0 10px 25px var(--color-shadow);
+}
+
+.container-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    background-color: var(--input);
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+.task input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    color: var(--color-primary);
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.task p {
+    flex: 1;
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.task .active p {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.task .bi-trash {
+    color: var(--gray);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.task .bi-trash:hover {
+    color: var(--color-primary);
+}
