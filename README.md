@@ -22,6 +22,13 @@ Este repositório contém o código-fonte para um gerenciador simples ideal para
 - *CSS3*: Estilização e design responsivo.
 - *JAVASCRIPT*: Lógica de manipulação do DOM e persistência de dados.
 
+## ⛏️ Futuras melhorias
+- Responsividade
+- Pagina de Login e Cadastro
+- Perfil
+- Banco de Dados
+- Cronometro e Alertas
+
 ## 🔗 Links Úteis
 
 - *Instagram*: https://www.instagram.com/lanaatech/
