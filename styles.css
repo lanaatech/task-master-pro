@@ -141,7 +141,7 @@ section {
 .content-funnel button:first-child {
     background-color: var(--color-primary);
     color: var(--white);
-    border-color: var(--color-primary);
+    border-color: var(--gray);
 }
 
 .content-funnel button:hover:not(:first-child) {
@@ -178,10 +178,7 @@ section {
     font-size: 0.95rem;
 }
 
-.task .active p {
-    text-decoration: line-through;
-    color: #9ca3af;
-}
+
 
 .task .bi-trash {
     color: var(--gray);
